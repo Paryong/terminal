@@ -46,4 +46,10 @@ while True:
         print(">OTHER\nTo see the list of other commands")
         print()
     if type=="moons":
-        print("hi")
+
+        buying_rate=('30','60','90')
+        print("$",money,)
+        print()
+        print("Welcome to the exomoons catalogue.\nTo route the autopilot to a moon, use the word ROUTE.\nTo learn about any moon, use INFO.\n--------------------------------")
+        print()
+        print("The company building   //   Buying at ",random.choice(buying_rate),"%")
