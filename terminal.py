@@ -157,3 +157,17 @@ while True:
         print()
     if type=="the company building" or type=="company building" or type=="route the company building":
         print("")
+    elif type=="experimentation" or type=="exper" or type=="experi" or type=="route experimentation":
+        os.system("cls")
+        print("THe cost route 41-Experimentation is &0.\nIt is currently",weather,"weather on this moon.")
+        print()
+        print("Please CONFIRM or DENY.")
+        print()
+        moons_answer=input("")
+        moons_answer=moons_answer.lower()
+        if moons_answer=="confirm" or moons_answer=="con" or moons_answer=="c":
+            os.system("cls")
+            print("Routing autopilot to 41-Experimentation.\nYour new balance is $",money,".")
+            print()
+            print("Please enjoy your flight.")
+        
