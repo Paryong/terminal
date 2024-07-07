@@ -155,4 +155,5 @@ while True:
         print("* Dine (",weather6,")")
         print("* Titan (",weather7,")")
         print()
-    if type==""
+    if type=="the company building" or type=="company building" or type=="route the company building":
+        print("")
