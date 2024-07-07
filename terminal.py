@@ -46,7 +46,7 @@ while True:
         print(">OTHER\nTo see the list of other commands")
         print()
     if type=="moons":
-
+        os.system("cls")
         buying_rate=('30','60','90')
 
         weather_number = int(random.randint(1, 100))
