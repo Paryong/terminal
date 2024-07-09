@@ -200,7 +200,7 @@ while True:
         print()
         print("Please CONFIRM or DENY")
         print()
-        moons_answerinput("")
+        moons_answer=input("")
         moons_answer=moons_answer.lower()
         if moons_answer=="confirm" or moons_answer=="con" or moons_answer=="c":
             os.system("cls")
@@ -373,378 +373,431 @@ while True:
         print()
         print("Record player  //  $120\nTelevision  //  $130\nHazard suit  //  $90\nTable  //  $70")
         print()
-        if type=="walkie-talkie" or type=="walk" or type=="walk" or type=="walkie":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(12*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order walkie-talkies.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"walkie-talkies. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shipping while on the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
 
-        if type=="flashlight" or type=="flash":
+    elif type=="walkie-talkie" or type=="walk" or type=="walkie":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(12*item_su)
+        if price<money:
             os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(15*item_su)
-            if price<money:
+            print("You have requested to order walkie-talkies.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
                 os.system("cls")
-                print("You have requested to order Flashlights.\nAmount:",item_su,".")
+                print("Ordered",item_su,"walkie-talkies. Your new balance is $",money-price,".")
                 print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Flashlights. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shipping while in the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
+                print("Our contractors enjoy fast, free shipping while on the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="shovel" or type=="sho":
+    elif type=="flashlight" or type=="flash":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(15*item_su)
+        if price<money:
             os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(30*item_su)
-            if price<money:
+            print("You have requested to order Flashlights.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
                 os.system("cls")
-                print("You have requested to order Shovels.\nAmount:",item_su,".")
+                print("Ordered",item_su,"Flashlights. Your new balance is $",money-price,".")
                 print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Shovels. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shipping while is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelld order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-        
-        if type=="lockpicker" or type=="lock":
+                print("Our contractors enjoy fast, free shipping while in the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
+
+    elif type=="shovel" or type=="sho":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(30*item_su)
+        if price<money:
             os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(20*item_su)
-            if pricee<money:
+            print("You have requested to order Shovels.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
                 os.system("cls")
-                print("You have requested to order Lockpickers.\nAmount:",item_su,".")
+                print("Ordered",item_su,"Shovels. Your new balance is $",money-price,".")
                 print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Lockpickers. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shipping while is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
+                print("Our contractors enjoy fast, free shipping while is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
+
+    elif type=="lockpicker" or type=="lock":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(20*item_su)
+        if price<money:
+            os.system("cls")
+            print("You have requested to order Lockpickers.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
+                os.system("cls")
+                print("Ordered",item_su,"Lockpickers. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shipping while is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
             
-        if type=="pro-flashlight" or type=="pro":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(25*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Pro-flashlights.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Pro-flashlights. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
 
-        if type=="stun grenade" or type=="stun":
+    elif type=="pro-flashlight" or type=="pro":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(25*item_su)
+        if price<money:
             os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(40*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Stun grenades.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Stun grenades. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="boombox" or type=="boom":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(60*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Boomboxes.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Boomboxes. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="tzp-inhalant" or type=="tzp":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(120*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order TZP-Inhalant.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"TZP-Inhalant. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="tzp-inhalant" or type=="tzp":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(120*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order TZP-Inhalant.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"TZP-Inhalant. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="zap gun" or type=="zap":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(400*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Zap guns.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Zap guns. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="jetpack" or type=="jet":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(700*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Jetpacks.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Jetpacks. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="jetpack" or type=="jet":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(700*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Jetpacks.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Jetpacks. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="extension ladder" or type=="extension":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(60*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Extension ladders.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Extension ladders. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="rader-booster" or type=="rader":
-            os.system("cls")
-            print("How many items do you want to buy:")
-            item_su=int(input())
-            price=int(50*item_su)
-            if price<money:
-                os.system("cls")
-                print("You have requested to order Rader-boosters.\nAmount:",item_su,".")
-                print()
-                print("Please CONFIRM or DENY.")
-                if type=="confirm" or type=="con" or type=="c":
-                    os.system("cls")
-                    print("Ordered",item_su,"Rader-boosters. Your new balance is $",money-price,".")
-                    print()
-                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
-                    print()
-                elif type=="deny" or type=="d":
-                    print("Cancelled order.")
-                    print()
-            else:
-                print("You don't have enough money to buy this.")
-
-        if type=="loud horn" or type=="loud":
-            os.system("cls")
-            print("You have requested to order Loud Horn.")
+            print("You have requested to order Pro-flashlights.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-               print("Order complete.\nYour new balance is $",int(money-100),".")
+                os.system("cls")
+                print("Ordered",item_su,"Pro-flashlights. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="signal translator" or type=="signal":
+    elif type=="stun grenade" or type=="stun":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(40*item_su)
+        if price<money:
             os.system("cls")
-            print("You have requested to order Signal Translator")
+            print("You have requested to order Stun grenades.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-255),".")
+                os.system("cls")
+                print("Ordered",item_su,"Stun grenades. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="teleporter" or type=="tele":
+    elif type=="boombox" or type=="boom":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(60*item_su)
+        if price<money:
             os.system("cls")
-            print("You have requested to order Teleporter.")
+            print("You have requested to order Boomboxes.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-375),".")
+                os.system("cls")
+                print("Ordered",item_su,"Boomboxes. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="inverse teleporter" or type=="inverse":
+    elif type=="tzp-inhalant" or type=="tzp":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(120*item_su)
+        if price<money:
             os.system("cls")
-            print("You have requested to order Inverse Teleporter")
+            print("You have requested to order TZP-Inhalant.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-425),".")
+                os.system("cls")
+                print("Ordered",item_su,"TZP-Inhalant. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="record player" or type=="record":
+    elif type=="tzp-inhalant" or type=="tzp":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(120*item_su)
+        if price<money:
             os.system("cls")
-            print("You have requested to order Record Player.")
+            print("You have requested to order TZP-Inhalant.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-120),".")
+                os.system("cls")
+                print("Ordered",item_su,"TZP-Inhalant. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="television" or type=="tele":
+    elif type=="zap gun" or type=="zap":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(400*item_su)
+        if price<money:
             os.system("cls")
-            print("You have requested to order Television.")
+            print("You have requested to order Zap guns.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-130),".")
+                os.system("cls")
+                print("Ordered",item_su,"Zap guns. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
 
-        if type=="hazard suit" or type=="hazard":
+    elif type=="jetpack" or type=="jet":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(700*item_su)
+        if price<money:
             os.system("cls")
-            print("You have requested to order Hazard suit.")
+            print("You have requested to order Jetpacks.\nAmount:",item_su,".")
             print()
             print("Please CONFIRM or DENY.")
+            type=input()
             if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-90),".")
+                os.system("cls")
+                print("Ordered",item_su,"Jetpacks. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
+
+    elif type=="jetpack" or type=="jet":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(700*item_su)
+        if price<money:
+            os.system("cls")
+            print("You have requested to order Jetpacks.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
+                os.system("cls")
+                print("Ordered",item_su,"Jetpacks. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
+
+    elif type=="extension ladder" or type=="extension":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(60*item_su)
+        if price<money:
+            os.system("cls")
+            print("You have requested to order Extension ladders.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
+                os.system("cls")
+                print("Ordered",item_su,"Extension ladders. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
+
+    elif type=="rader-booster" or type=="rader":
+        os.system("cls")
+        print("How many items do you want to buy:")
+        item_su=int(input())
+        price=int(50*item_su)
+        if price<money:
+            os.system("cls")
+            print("You have requested to order Rader-boosters.\nAmount:",item_su,".")
+            print()
+            print("Please CONFIRM or DENY.")
+            type=input()
+            if type=="confirm" or type=="con" or type=="c":
+                os.system("cls")
+                print("Ordered",item_su,"Rader-boosters. Your new balance is $",money-price,".")
+                print()
+                print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                print()
+            elif type=="deny" or type=="d":
+                print("Cancelled order.")
+                print()
+        else:
+            print("You don't have enough money to buy this.")
+
+    elif type=="loud horn" or type=="loud":
+        os.system("cls")
+        print("You have requested to order Loud Horn.")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-100),".")
+
+    elif type=="signal translator" or type=="signal":
+        os.system("cls")
+        print("You have requested to order Signal Translator")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-255),".")
+
+    elif type=="teleporter" or type=="tele":
+        os.system("cls")
+        print("You have requested to order Teleporter.")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-375),".")
+
+    elif type=="inverse teleporter" or type=="inverse":
+        os.system("cls")
+        print("You have requested to order Inverse Teleporter")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-425),".")
+
+    elif type=="record player" or type=="record":
+        os.system("cls")
+        print("You have requested to order Record Player.")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-120),".")
+
+    elif type=="television" or type=="tele":
+        os.system("cls")
+        print("You have requested to order Television.")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-130),".")
+
+    elif type=="hazard suit" or type=="hazard":
+        os.system("cls")
+        print("You have requested to order Hazard suit.")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-90),".")
         
-        if type=="table":
-            os.system("cls")
-            print("You have requested to order Table.")
-            print()
-            print("Please CONFIRM or DENY.")
-            if type=="confirm" or type=="con" or type=="c":
-                print("Order complete.\nYour new balance is $",int(money-70),".")
+    elif type=="table":
+        os.system("cls")
+        print("You have requested to order Table.")
+        print()
+        print("Please CONFIRM or DENY.")
+        type=input()
+        if type=="confirm" or type=="con" or type=="c":
+            print("Order complete.\nYour new balance is $",int(money-70),".")
         
-    if type=="bestiary":
-        
-        
+    elif type=="info walk" or type=="info walkie" or type=="info walike-talkie":
+        print("$",money)
+        print()
+        print("Useful for keeping in touch! Hear other players when the walkie talkie is in your inventory. Must be in your hand and pressed down to transmit voice.")
+        print()
+
+    elif type=="flash" or type=="flashlight":
+        print("$",money)
+        print()
+        print("The most affordable light source. It's even waterproof!")
+        print()
+
+    elif type=="info sho" or type=="info shovel":
+        print("$",money)
+        print()
+        print("For self-defense!")
+        print()
+
+    elif type=="info lock" or type=="info lockpicker":
+        print("$",money)
+        print()
+        print("Lock-pickers will unlock your limitless potential for efficiency on the job. Powered by proprietary AI software, they will get you access through any locked door.")
+        print()
+
+    elif type=="info pro" or type=="info proflashlight":
+        print("$",money)
+        print()
+        print("With an extra battery life and even brighter bulb, your colleagues can never leave you in the dark again!")
+        print()
+
+    
+
