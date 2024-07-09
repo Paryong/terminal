@@ -680,4 +680,71 @@ while True:
                     print()
             else:
                 print("You don't have enough money to buy this.")
+
+        if type=="loud horn" or type=="loud":
+            os.system("cls")
+            print("You have requested to order Loud Horn.")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+               print("Order complete.\nYour new balance is $",int(money-100),".")
+
+        if type=="signal translator" or type=="signal":
+            os.system("cls")
+            print("You have requested to order Signal Translator")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-255),".")
+
+        if type=="teleporter" or type=="tele":
+            os.system("cls")
+            print("You have requested to order Teleporter.")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-375),".")
+
+        if type=="inverse teleporter" or type=="inverse":
+            os.system("cls")
+            print("You have requested to order Inverse Teleporter")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-425),".")
+
+        if type=="record player" or type=="record":
+            os.system("cls")
+            print("You have requested to order Record Player.")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-120),".")
+
+        if type=="television" or type=="tele":
+            os.system("cls")
+            print("You have requested to order Television.")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-130),".")
+
+        if type=="hazard suit" or type=="hazard":
+            os.system("cls")
+            print("You have requested to order Hazard suit.")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-90),".")
+        
+        if type=="table":
+            os.system("cls")
+            print("You have requested to order Table.")
+            print()
+            print("Please CONFIRM or DENY.")
+            if type=="confirm" or type=="con" or type=="c":
+                print("Order complete.\nYour new balance is $",int(money-70),".")
+        
+    if type=="bestiary":
+        
         
