@@ -361,3 +361,323 @@ while True:
         print()
         print("Fauna: Dangerous beings are rumored to inhabit the vast network of tunnels.")
         print()
+    elif type=="store":
+        print("Welcome to the company store.\nUse words BUY and INFO on any item.\nOrder tools in bulk by typing a number.\n---------------------------")
+        print()
+        print()
+        print("* Walkie-talkie  //  Price: $12\n* Flashlight  //  Price: $15\n* Shovel  //  Price: $30\n* Lockpicker  //  Price:$20\n* Pro-flashlight  //  Price: $25\n* Stun grenade  //  Price: $40\n* Boombox  //  Price: $60\n* TZP-Inhalant  //  Price: $120\n* Zap gun  //  Price: $400\n* Jetpack  //  Price: $700\n* Extension ladder  //  Price: $60\n* Rader-booster  //  Price: $50")
+        print()
+        print("SHIP UPGRADES: \n* Loud horn  //  Price: $150\n* Signal translator  //  Price: $255\n* Teleporter  //  Price: $375\n* Inverse Teleporter  //  Price: $425")
+        print()
+        print("The selection of ship decor rotates per-quota. Be sure to check back next week: \n---------------------------")
+        print()
+        print("Record player  //  $120\nTelevision  //  $130\nHazard suit  //  $90\nTable  //  $70")
+        print()
+        if type=="walkie-talkie" or type=="walk" or type=="walk" or type=="walkie":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(12*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order walkie-talkies.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"walkie-talkies. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shipping while on the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="flashlight" or type=="flash":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(15*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Flashlights.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Flashlights. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shipping while in the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="shovel" or type=="sho":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(30*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Shovels.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Shovels. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shipping while is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelld order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+        
+        if type=="lockpicker" or type=="lock":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(20*item_su)
+            if pricee<money:
+                os.system("cls")
+                print("You have requested to order Lockpickers.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Lockpickers. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shipping while is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+            
+        if type=="pro-flashlight" or type=="pro":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(25*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Pro-flashlights.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Pro-flashlights. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="stun grenade" or type=="stun":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(40*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Stun grenades.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Stun grenades. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="boombox" or type=="boom":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(60*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Boomboxes.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Boomboxes. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="tzp-inhalant" or type=="tzp":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(120*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order TZP-Inhalant.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"TZP-Inhalant. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="tzp-inhalant" or type=="tzp":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(120*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order TZP-Inhalant.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"TZP-Inhalant. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="zap gun" or type=="zap":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(400*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Zap guns.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Zap guns. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="jetpack" or type=="jet":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(700*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Jetpacks.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Jetpacks. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="jetpack" or type=="jet":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(700*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Jetpacks.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Jetpacks. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="extension ladder" or type=="extension":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(60*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Extension ladders.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Extension ladders. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+
+        if type=="rader-booster" or type=="rader":
+            os.system("cls")
+            print("How many items do you want to buy:")
+            item_su=int(input())
+            price=int(50*item_su)
+            if price<money:
+                os.system("cls")
+                print("You have requested to order Rader-boosters.\nAmount:",item_su,".")
+                print()
+                print("Please CONFIRM or DENY.")
+                if type=="confirm" or type=="con" or type=="c":
+                    os.system("cls")
+                    print("Ordered",item_su,"Rader-boosters. Your new balance is $",money-price,".")
+                    print()
+                    print("Our contractors enjoy fast, free shippng whle is the job! Any purchased items will arrive hourly at your approximate location.")
+                    print()
+                elif type=="deny" or type=="d":
+                    print("Cancelled order.")
+                    print()
+            else:
+                print("You don't have enough money to buy this.")
+        
