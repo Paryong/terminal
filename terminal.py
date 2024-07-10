@@ -939,4 +939,5 @@ while True:
             print()
             print("If you are reading it in the future, you are probably from a nother crew. The turnover rate here is enormous, maybe cause this job sucks and every one turns over dead! Maybe I can give some help when I have some expirience. End log.\nOh, our names are: Sigurd (me), Richard, Desmond, Jess.")
             print()
+        
 
