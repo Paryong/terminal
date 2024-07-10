@@ -3,6 +3,7 @@ import random
 import os
 import datetime
 
+
 now=datetime.datetime.now()
 day_of_week = now.weekday()
 if day_of_week==0:
