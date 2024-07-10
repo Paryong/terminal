@@ -760,6 +760,7 @@ while True:
         if type=="confirm" or type=="con" or type=="c":
             print("Order complete.\nYour new balance is $",int(money-90),".")
         
+    
     elif type=="table":
         os.system("cls")
         print("You have requested to order Table.")
@@ -768,7 +769,7 @@ while True:
         type=input()
         if type=="confirm" or type=="con" or type=="c":
             print("Order complete.\nYour new balance is $",int(money-70),".")
-        
+
     elif type=="info walk" or type=="info walkie" or type=="info walike-talkie":
         print("$",money)
         print()
@@ -799,5 +800,143 @@ while True:
         print("With an extra battery life and even brighter bulb, your colleagues can never leave you in the dark again!")
         print()
 
+    elif type=="info stun" or type=="info stun grenade":
+        print("$",money)
+        print()
+        print("[This action was not compatible with this object.]")
+        print()
+
+    elif type=="info boombox" or type=="info boom":
+        print("$",money)
+        print()
+        print("These jamming tunes are great for a morale boost on your crew!")
+        print()
+
+    elif type=="info tzp" or type=="info tzp-inhalant":
+        print("$",money)
+        print()
+        print("This safe and legal medicine can be administered to see great benefits to your performance on the job! Your ability to move LONG distances while carrying HEFTY objects will be second to none! Warning: TZP gas may impact the brain with extended exposure. Follow instructions manual privided with the canister.\nDon't forget to share!")
+        print()
+
+    elif type=="info zap" or type=="info zap gun":
+        print("$",money)
+        print()
+        print("The most specialized self-protective equipment, capable of sending upwards of 80,000 volts!\n\nTo keep it targeted as long as possible, pull the gun side-to-side to counter the bend and fight against the pull of the electric beam. It can only stun for as long as you keep the current flowing.")
+        print()
+
+    elif type=="info jet" or type=="info jetpack":
+        print("$",money)
+        print()
+        print("This device will get you around anywhere! Just use it responsibly!")
+        print()
     
+    elif type=="info extension" or type=="info extension ladder":
+        print("$",money)
+        print()
+        print("The extension ladder can reach as high as nine meters! Use it to scale any cliff and reach for the stars! To save batteries the extension ladder automatically stores itself after 18 seconds.")
+        print()
+
+    elif type=="info rader" or type=="info rader booster":
+        print("$",money)
+        print()
+        print("Use the 'SWITCH' command before the rader booster's name to view it on the main monitor. It must be activated\n\nUse the 'PING' command before the rader booster's name to play a special sound from the device.")
+        print()
+        
+    elif type=="info spray":
+        print("$",money)
+        print()
+        print("[This action wat now compatible with this object.]")
+        print()
+    
+    elif type=="info weed" or type=="info weed killer":
+        print("$",money)
+        print()
+        print("Deal with those pesky weeds! Repeated, firm presses on the trigger aimed at the root of the weed is all you need!")
+        print()
+
+    elif type=="info cruiser":
+        print("$",money)
+        print()
+        print("The Company Cruiser is an entire delivery truck capable of carrying as many items as you could ever need, including your fellow coworkers! Your purchase of a Company Cruiser comes with one free, life-time warranty, because we are that confident in its durability and usefulness!\n\nIt comes with a manual, so make sure to read up on the best practices.")
+        print()
+
+    elif type=="info loud" or type=="info loud horn":
+        print("$",money)
+        print()
+        print("Used to communicate with any crew member from any distance,no walki talkie required! The horn can be heard from anywhere. But what does it mean?\nThat's up to you!")
+        print()
+
+    elif type=="info signal" or type=="info signal translator":
+        print("$",money)
+        print()
+        print("Use the 'transmit' command to broadcast a text message to all cremates. The message must be under 10 letters.")
+        print()
+        
+    elif type=="info tele" or type=="info teleporter":
+        print("$",money)
+        print()
+        print("Press the button to activate the teleporter. It will teleport whoever is currently being monitored on the ship's radar. They wil not able to keep any of their held items through the teleport. It takes about ten seconds to recharge.")
+        print()
+
+    elif type=="info inverse" or type=="info inverse teleporter":
+        print("$",money)
+        print()
+        print("The inverse teleporter is a modified teleporter which will teleport you to a random position outside the ship. All your items will be dropped at the teleporter before transport. The inverse teleporter can be used by everyone at once and has a 3.5 minute cooldown.\n\nDISCLAIMER: The inverse teleporter can only transport you out, not in, and you may become trapped. The company is not responsible for injury or replacement of heads and limbs induced by quantum entanglement and bad luck.")
+        print()
+
+    elif type=="storage":
+        print("$",money)
+        print()
+        print("While moving furniture with [B], you can press [X] to send it to storage. You can call it back from storage here.")
+        print()
+        print("These are the items in storage:\n\n[No items stored. While moving an object with B, Press X to store it.]")
+        print()
+
+    elif type=="best" or type=="bestiary":
+        print("$",money)
+        print()
+        print("BESTIARY")
+        print()
+        print("To access a creature file, type 'INFO' after its name.\n--------------------------")
+        print()
+        print("No data collected on wildlife. Scans are required.")
+        print()
+
+    elif type=="other":
+        print("$",money)
+        print()
+        print("Other commands:")
+        print()
+        print(">VIEW MONITOR\nTo toggle on AND off the main monitor's map cam")
+        print()
+        print(">SWITCH [Player name]\nTo switch view to a player on the main monitor")
+        print()
+        print(">PING [Rader booster name]\nTo make a rader booster play a noise.")
+        print()
+        print(">TRANSMIT [message]\nTo transmit a message with the signal translator.")
+        print()
+        print(">SCAN\nTo scan for the number of items left on the current planet.")
+    
+    elif type=="scan":
+        print("$",money)
+        print()
+        print("There are 0 objects outside the ship, totalling at an approximate value of $0.")
+
+    elif type=="sigurd":
+        print("$",money)
+        print()
+        print("SIGURN'S LOG ENTRIES")
+        print()
+        print("To read a log, use keyword 'VIEW' before its name.\n---------------------")
+        print()
+        print()
+        print("First Log - Aug 22")
+        print()
+        print()
+        if type=="first log":
+            print("Date: August 22, 1968\nHello. i am writing this log to keep myself sane. I couldnt find a way to do the most basic thing on this old janky butt computer so I had Desmond add it in, the log feature. till now ive just been adding my own notes to the bestiary whatever i know. My brother said i should keep a journal so im doing what i can! I am writing in a proffessional manner, as these logs could become a historical record, as they will probably be here for years, just as long as there isnt a clean wipe. that is what desmond saidfd.")
+            print()
+            print()
+            print("If you are reading it in the future, you are probably from a nother crew. The turnover rate here is enormous, maybe cause this job sucks and every one turns over dead! Maybe I can give some help when I have some expirience. End log.\nOh, our names are: Sigurd (me), Richard, Desmond, Jess.")
+            print()
 
