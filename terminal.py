@@ -947,11 +947,13 @@ while True:
         print("First Log - Aug 22")
         print()
         print()
-        if type=="first log":
+        view_log=input()
+        view_log=view_log.lower()
+        if view_log=="first log" or view_log=="view first log":
             print("Date: August 22, 1968\nHello. i am writing this log to keep myself sane. I couldnt find a way to do the most basic thing on this old janky butt computer so I had Desmond add it in, the log feature. till now ive just been adding my own notes to the bestiary whatever i know. My brother said i should keep a journal so im doing what i can! I am writing in a proffessional manner, as these logs could become a historical record, as they will probably be here for years, just as long as there isnt a clean wipe. that is what desmond saidfd.")
             print()
             print()
             print("If you are reading it in the future, you are probably from a nother crew. The turnover rate here is enormous, maybe cause this job sucks and every one turns over dead! Maybe I can give some help when I have some expirience. End log.\nOh, our names are: Sigurd (me), Richard, Desmond, Jess.")
-            print()""
+            print()
         
 
