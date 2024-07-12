@@ -138,12 +138,13 @@ while True:
         else:
             weather7 = "Sunny"
         
-        
+        rate=random.choice(buying_rate)
+
         print("$",money,)
         print()
         print("Welcome to the exomoons catalogue.\nTo route the autopilot to a moon, use the word ROUTE.\nTo learn about any moon, use INFO.\n--------------------------------")
         print()
-        print("The company building   //   Buying at ",random.choice(buying_rate),"%")
+        print("The company building   //   Buying at ",rate,"%")
         print()
         print("* Experimentation (",weather,")")
         print("* Assurance (",weather1,")")
@@ -156,11 +157,23 @@ while True:
         print("* Dine (",weather6,")")
         print("* Titan (",weather7,")")
         print()
-    if type=="the company building" or type=="company building" or type=="route the company building":
-        print("")
+                                                                                           
+    if type=="the company building" or type=="company building" or type=="route the company building" or type=="company":
+        os.system("cls")
+        print("The cost to route 71-Gordion is $0.\nThe company building is buying at",rate,"%.")
+        print()
+        print("Please CONFIRM or DENY.")
+        print()
+        moons_answer=input()
+        moons_answer=moons_answer.lower()
+        if moons_answer=="confirm" or moons_answer=="con" or moons_answer=="c":
+            os.system("cls")
+            print("Routing autopilot to 71-Gordion.\nYour new balance is $",money,".")
+            print()
+            print("Please enjoy your flight.")
     elif type=="experimentation" or type=="exper" or type=="experi" or type=="route experimentation":
         os.system("cls")
-        print("THe cost route 41-Experimentation is &0.\nIt is currently",weather,"weather on this moon.")
+        print("The cost route 41-Experimentation is &0.\nIt is currently",weather,"weather on this moon.")
         print()
         print("Please CONFIRM or DENY.")
         print()
@@ -939,6 +952,6 @@ while True:
             print()
             print()
             print("If you are reading it in the future, you are probably from a nother crew. The turnover rate here is enormous, maybe cause this job sucks and every one turns over dead! Maybe I can give some help when I have some expirience. End log.\nOh, our names are: Sigurd (me), Richard, Desmond, Jess.")
-            print()
+            print()""
         
 
